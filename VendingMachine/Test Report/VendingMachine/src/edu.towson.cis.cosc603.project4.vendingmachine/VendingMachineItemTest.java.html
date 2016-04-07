@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>VendingMachineItemTest.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">VendingMachine (Apr 6, 2016 9:48:33 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachine</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc603.project4.vendingmachine</a> &gt; <span class="el_source">VendingMachineItemTest.java</span></div><h1>VendingMachineItemTest.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package edu.towson.cis.cosc603.project4.vendingmachine;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+/**
+ * @author Madhura Tendulkar
+ *
+ */
+<span class="nc" id="L17">public class VendingMachineItemTest {</span>
+	
+<span class="fc" id="L19">	private static VendingMachineItem vendingMachineItem = null;</span>
+<span class="fc" id="L20">	private static VendingMachineItem vendingMachineItem1 = null;</span>
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@BeforeClass
+	public static void setUp() throws Exception {
+		
+<span class="fc" id="L28">		vendingMachineItem = new VendingMachineItem(&quot;Ice cream&quot;, 2.5);</span>
+<span class="nc" id="L29">		vendingMachineItem1 = new VendingMachineItem(&quot;Coke&quot;, -2);</span>
+<span class="nc" id="L30">	}</span>
+
+	
+	/**
+	 * Test the constructor of VendingMachineItem
+	 * Test method for {@link edu.towson.cis.cosc603.project4.vendingmachine.VendingMachineItem#VendingMachineItem(java.lang.String, double)}.
+	 */
+	@Test
+	public void testVendingMachineItem() {
+		
+<span class="nc" id="L40">			assertTrue((vendingMachineItem instanceof VendingMachineItem));</span>
+		
+<span class="nc" id="L42">	}</span>
+	/**
+	 * Test the the price of VendingMachineItem less than zero
+	 * Test method for {@link edu.towson.cis.cosc603.project4.vendingmachine.VendingMachineItem#getPrice()}..
+	 */
+	@Test 
+	public void testVendingMachineItem1() {
+		
+<span class="nc" id="L50">		assertEquals(-2, vendingMachineItem1.getPrice(),0.0);</span>
+	
+<span class="nc" id="L52">}</span>
+	
+	/**
+	 * Test the method getName
+	 * Test method for {@link edu.towson.cis.cosc603.project4.vendingmachine.VendingMachineItem#getName()}.
+	 */
+	@Test
+	public void testGetName() {
+<span class="nc" id="L60">		assertEquals(&quot;Ice cream&quot;, vendingMachineItem.getName());</span>
+<span class="nc" id="L61">	}</span>
+
+	/**
+	 * Test the method getPrice
+	 * Test method for {@link edu.towson.cis.cosc603.project4.vendingmachine.VendingMachineItem#getPrice()}.
+	 */
+	
+	@Test
+	public void testGetPrice() {
+<span class="nc" id="L70">		assertEquals(2.5, vendingMachineItem.getPrice(),0.0);</span>
+<span class="nc" id="L71">	}</span>
+	
+	
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@AfterClass
+	public static void tearDown() throws Exception {
+		
+<span class="fc" id="L80">		vendingMachineItem = null;</span>
+<span class="fc" id="L81">		vendingMachineItem = null;</span>
+<span class="fc" id="L82">		vendingMachineItem1 = null;</span>
+	
+<span class="fc" id="L84">	}</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>VendingMachine (Apr 6, 2016 9:48:33 PM)</div></body></html>
