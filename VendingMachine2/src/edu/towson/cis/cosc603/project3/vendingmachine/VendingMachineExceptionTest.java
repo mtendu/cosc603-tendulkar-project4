@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
  * The class <code>VendingMachineExceptionTest</code> contains tests for the class <code>{@link VendingMachineException}</code>.
  *
  * @generatedBy CodePro at 4/6/16 10:20 PM
- * @author ApurvaNayak
+ * @author Madhura Tendulkar
  * @version $Revision: 1.0 $
  */
 public class VendingMachineExceptionTest {
